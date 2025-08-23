@@ -3,19 +3,26 @@ import { socialMediaLinks } from '../data/yuvrajData';
 
 function Topbar() {
     const [dropdown, setDropdown] = useState(false);
+    const [animate, setAnimate] = useState(false);
     const dropdownRef = useRef(null);
 
     const toggleDropdown = () => {
-        setDropdown((prev) => !prev);
+        if (!dropdown) {
+            setDropdown(true);
+            setTimeout(() => setAnimate(true), 10);
+        } else {
+            setAnimate(false);
+            setTimeout(() => setDropdown(false), 200);
+        }
     };
 
     useEffect(() => {
         function handleClickOutside(event) {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                setDropdown(false);
+                setAnimate(false);
+                setTimeout(() => setDropdown(false), 200);
             }
         }
-
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
@@ -36,7 +43,10 @@ function Topbar() {
                 </button>
 
                 {dropdown && (
-                    <div className='absolute right-0 top-7 bg-[#020712] border border-[#1D1F29] divide-y divide-[#1D1F29] rounded-lg shadow-sm w-44'>
+                    <div
+                        className={`absolute right-0 top-7 bg-[#020712] border border-[#1D1F29] divide-y divide-[#1D1F29] rounded-lg shadow-sm w-44 transform transition-all duration-200 origin-top
+                        ${animate ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+                    >
                         {Object.entries(socialMediaLinks).map(([key, value]) => (
                             <div key={key} className='text-left py-1'>
                                 <a

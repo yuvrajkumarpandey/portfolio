@@ -18,7 +18,9 @@ export const profileSection = {
 
     "name": "Yuvraj Kumar Pandey",
 
-    "status": "Pursuing B.Tech in Computer Science and Engineering | Web Dev | ML"
+    "status": "Pursuing B.Tech in Computer Science and Engineering | Web Dev | ML",
+
+    "location": "Punjab, India"
 }
 
 export const skills = {

@@ -1,4 +1,5 @@
 import { profileSection, skills } from '../data/yuvrajData'
+import Clock from './Clock';
 import Skillschip from './Skillschip';
 
 function Profile() {
@@ -27,6 +28,15 @@ function Profile() {
                     }
                 </p>
             </div>
+
+            <div className='mt-3 flex flex-row items-center justify-center gap-3'>
+                <Clock />
+                <div title='Location' className='flex flex-row gap-1'>
+                    <img src='/icons/location.svg' />
+                    <p className='text-xs text-[#CAC7C7]'>{profileSection['location']}</p>
+                </div>
+            </div>
+
             <div className='flex flex-row items-center justify-center flex-wrap gap-2 mt-3'>
                 {
                     Object.entries(skills).map(([name, icon]) => {

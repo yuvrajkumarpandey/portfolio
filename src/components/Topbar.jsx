@@ -30,9 +30,9 @@ function Topbar() {
     }, []);
 
     return (
-        <div className='w-full px-5 py-5 flex flex-row items-center justify-between'>
+        <div className='w-full px-5 py-5 flex flex-row items-center justify-between border-b border-[#1D1F29]'>
             <div>
-                <img src='/logo.svg' className='max-w-full' />
+                <a href=''><img src='/logo.svg' className='max-w-full' /></a>
             </div>
             <div ref={dropdownRef} className="relative">
                 <button

@@ -1,5 +1,6 @@
 import './App.css'
 import Profile from './components/Profile'
+import Projects from './components/Projects'
 import Topbar from './components/Topbar'
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
         <Topbar />
 
         <Profile />
+
+        <Projects />
 
       </div>
     </div>

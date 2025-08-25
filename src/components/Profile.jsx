@@ -4,7 +4,7 @@ import Skillschip from './Skillschip';
 
 function Profile() {
     return (
-        <div className="p-5 mt-5 flex flex-col">
+        <div className="px-5 pt-5 pb-10 mt-5 flex flex-col border-b border-[#1D1F29]">
             <div>
                 <img
                     className={`${profileSection['profileImg']['height']} rounded-full border-4 border-[#1D1F29] mx-auto`}
@@ -37,7 +37,7 @@ function Profile() {
                 </div>
             </div>
 
-            <div className='flex flex-row items-center justify-center flex-wrap gap-2 mt-3'>
+            <div className='flex mx-0 md:mx-10 flex-row items-center justify-center flex-wrap gap-2 mt-3'>
                 {
                     Object.entries(skills).map(([name, icon]) => {
                         return <Skillschip key={name} name={name} icon={icon} />

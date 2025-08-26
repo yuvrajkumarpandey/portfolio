@@ -7,7 +7,7 @@ const CertificatesCards = ({
     link,
 }) => {
     return (
-        <a className="hover:text-white transition-colors duration-100 text-[#CAC7C7]" target="self" href={link}>
+        <a className="hover:text-white transition-colors duration-100 text-[#CAC7C7]" target="_blank" href={link}>
             <div className="flex flex-row items-start gap-3">
                 <div className="flex-shrink-0">
                     <img

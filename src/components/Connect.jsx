@@ -9,7 +9,7 @@ function Connect() {
             <div className="flex flex-wrap items-center justify-center gap-4 mt-3">
                 {contactMe.map((connect, index) => (
                     <Tooltip text={connect.title}>
-                        <a target='self' key={index} href={connect.link}>
+                        <a target='_blank' key={index} href={connect.link}>
                             <div className="border border-[#1D1F29] p-2 rounded-md hover:bg-zinc-900/75">
                                 <img src={connect.icon} />
                             </div>

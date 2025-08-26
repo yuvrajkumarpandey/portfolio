@@ -51,7 +51,7 @@ function Topbar() {
                             contactMe.map((connect, index) => (
                                 <div key={index} className='text-left py-1'>
                                     <a
-                                        target='self'
+                                        target='_blank'
                                         className='block px-4 py-2 hover:bg-[#1b1d22]'
                                         href={connect.link}
                                     >

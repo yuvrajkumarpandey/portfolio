@@ -6,7 +6,6 @@ function Projects() {
     let [projectNum, setProjectNum] = useState(2)
     let [btntxt, setBtntxt] = useState("Show More")
     let maxShow = projects.length > 5 ? 5 : projects.length
-
     function show() {
         setProjectNum((prev) => {
             if (prev == 2) {
@@ -29,7 +28,14 @@ function Projects() {
         <div className="px-5 pt-5 pb-5 flex flex-col border-b border-[#1D1F29]">
             <div className="flex justify-between">
                 <h3 className="text-lg font-medium text-[#CAC7C7]">Projects</h3>
-                <button className="text-[#CAC7C7] text-sm hover:cursor-pointer hover:text-white" onClick={show}>{btntxt}</button>
+                {projects.length > 2 && (
+                    <button
+                        className="text-[#CAC7C7] text-sm hover:cursor-pointer hover:text-white"
+                        onClick={show}
+                    >
+                        {btntxt}
+                    </button>
+                )}
             </div>
             <div className="flex flex-col gap-4 mt-3">
                 {
@@ -38,7 +44,7 @@ function Projects() {
                     ))
                 }
             </div>
-        </div>
+        </div >
     )
 }
 

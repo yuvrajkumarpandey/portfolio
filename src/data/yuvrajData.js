@@ -40,48 +40,70 @@ export const skills = {
 
 export const projects = [
     {
-        title: "Taskify - Todo App",
+        title: "Green Energy UI Website",
         status: "Running",
         statusColor: "text-green-400 bg-green-400/10",
-        description: "A simple and intuitive task manager built with React and TailwindCSS, allowing users to create, edit, and organize daily tasks.",
-        image: "https://picsum.photos/400/250?random=1",
-        liveLink: "https://taskify-app.vercel.app/",
-        githubLink: "https://github.com/username/taskify"
+        description: "GreenEnergy is a clean, responsive website built with Bootstrap that promotes sustainable energy solutions and adoption.",
+        image: "/projectsImg/project-one.png",
+        liveLink: "https://yuvrajkumarpandey.github.io/GreenEnergy/",
+        githubLink: "https://github.com/yuvrajkumarpandey/GreenEnergy"
     },
     {
-        title: "Crypto Tracker",
+        title: "PizzaParadise UI Website",
         status: "Running",
         statusColor: "text-green-400 bg-green-400/10",
-        description: "A real-time cryptocurrency price tracking dashboard using React, Chart.js, and CoinGecko API.",
-        image: "https://picsum.photos/400/250?random=2",
-        liveLink: "https://crypto-tracker.vercel.app/",
-        githubLink: "https://github.com/username/crypto-tracker"
+        description: "PizzaParadise is a responsive website built with HTML, CSS, and JavaScript. It features an appealing, interactive UI to showcase a variety of pizzas, with options for online ordering and a dynamic menu.",
+        image: "/projectsImg/project-two.png",
+        liveLink: "https://yuvrajkumarpandey.github.io/PizzaParadise/",
+        githubLink: "https://github.com/yuvrajkumarpandey/PizzaParadise"
+    }
+]
+
+export const certificate = [
+    {
+        "title": "Digital Systems: From Logic Gates to Processors",
+        "provider": "Universitat Autònoma de Barcelona",
+        "date": "Aug 2025",
+        "img": "/uabbarcelona.jpg",
+        "link": "https://coursera.org/share/4c5a30c379464a64c0ed947e3ec6c402"
     },
     {
-        title: "Blogify - Markdown Blog",
-        status: "Running",
-        statusColor: "text-green-400 bg-green-400/10",
-        description: "A blogging platform with Markdown support, live preview, and user authentication.",
-        image: "https://picsum.photos/400/250?random=3",
-        liveLink: "https://blogify-demo.vercel.app/",
-        githubLink: "https://github.com/username/blogify"
+        "title": "Foundations of User Experience (UX) Design",
+        "provider": "Google",
+        "date": "Aug 2025",
+        "img": "/google.jpg",
+        "link": "https://coursera.org/share/db49995f857a24c06070aaa5da5b6bf8"
     },
     {
-        title: "DevConnect - Social Platform",
-        status: "Running",
-        statusColor: "text-green-400 bg-green-400/10",
-        description: "A mini social networking platform for developers to share projects, resources, and collaborate.",
-        image: "https://picsum.photos/400/250?random=4",
-        liveLink: "https://devconnect.vercel.app/",
-        githubLink: "https://github.com/username/devconnect"
+        "title": "Introduction to Git and GitHub",
+        "provider": "Google",
+        "date": "Aug 2025",
+        "img": "/google.jpg",
+        "link": "https://coursera.org/share/76c4301b4bba71f0716126beddab3de4"
     },
     {
-        title: "Weatherly - Weather App",
-        status: "Running",
-        statusColor: "text-green-400 bg-green-400/10",
-        description: "A weather forecast app using OpenWeatherMap API with geolocation support and animated icons.",
-        image: "https://picsum.photos/400/250?random=5",
-        liveLink: "https://weatherly-demo.vercel.app/",
-        githubLink: "https://github.com/username/weatherly"
+        "title": "Computer Programming",
+        "provider": "iamneo - An NIIT Venture",
+        "date": "May 2025",
+        "img": "/iamneo.jpg",
+        "link": "https://lpucolab438.examly.io/certificate/U2FsdGVkX1%2BiNctjOhGBNNG5CE6GXIHY6gloUcgn%2BzY%3D"
+    },
+    {
+        "title": "Responsive Web Design",
+        "provider": "freeCodeCamp",
+        "date": "Oct 2024",
+        "img": "/freecodecamp.jpg",
+        "link": "https://freecodecamp.org/certification/yuvrajkumarpandey/responsive-web-design"
+    }
+]
+
+export const blogs = [
+    {
+        "title": "Understanding Augmented Reality (AR) and Its Applications Across Industries",
+        "link": "https://medium.com/@ykp3176/understanding-augmented-reality-ar-and-its-applications-across-industries-24233eab481a"
+    },
+    {
+        "title": "Gaganyaan: India's Ambitious Leap into Space Exploration",
+        "link": "https://medium.com/@ykp3176/gaganyaan-indias-ambitious-leap-into-space-exploration-e7537ff1afe0"
     }
 ]

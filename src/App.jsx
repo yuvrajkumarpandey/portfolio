@@ -1,4 +1,6 @@
 import './App.css'
+import Blogs from './components/Blogs'
+import Certification from './components/Certification'
 import Profile from './components/Profile'
 import Projects from './components/Projects'
 import Topbar from './components/Topbar'
@@ -13,6 +15,10 @@ function App() {
         <Profile />
 
         <Projects />
+
+        <Certification />
+
+        <Blogs />
 
       </div>
     </div>

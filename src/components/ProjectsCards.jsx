@@ -8,7 +8,7 @@ const ProjectCard = ({
     githubLink,
 }) => {
     return (
-        <div className="project-box cursor-pointer hover:bg-zinc-900/75 transition-colors duration-100 border border-zinc-700 rounded-md">
+        <div className="project-box cursor-pointer hover:bg-zinc-900/75 transition-colors duration-100 border border-[#1D1F29] rounded-md text-[#CAC7C7] hover:text-white">
             <div className="flex md:flex-row flex-col gap-3 p-2">
                 {/* Project Image */}
                 <div className="basis-[22%] p-1 select-none">
@@ -24,9 +24,9 @@ const ProjectCard = ({
                 <div className="basis-[78%] flex flex-col md:gap-0 gap-1">
                     <div className="flex justify-between items-center">
                         <div className="flex gap-2 items-center truncate">
-                            <h1 className="text-2xl font-semibold text-[#CAC7C7]">{title}</h1>
+                            <h1 className="text-2xl font-semibold truncate">{title}</h1>
                             <div
-                                className={`select-none font-medium text-xs w-fit px-1.5 py-0.5 gap-0.5 rounded-md flex items-center ${statusColor}`}
+                                className={`select-none font-medium hidden text-xs w-fit px-1.5 py-0.5 gap-0.5 rounded-md sm:flex items-center ${statusColor}`}
                             >
                                 <span className="animate-pulse">
                                     <svg
@@ -51,7 +51,7 @@ const ProjectCard = ({
                                     href={liveLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover:text-zinc-400 transition-colors duration-100"
+                                    className="transition-colors duration-100"
                                     title="Live"
                                 >
                                     <svg
@@ -76,7 +76,7 @@ const ProjectCard = ({
                                     href={githubLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover:text-zinc-400 transition-colors duration-100"
+                                    className="transition-colors duration-100"
                                     title="GitHub"
                                 >
                                     <svg
@@ -99,7 +99,7 @@ const ProjectCard = ({
                     </div>
 
                     {/* Description */}
-                    <p className="opacity-80 text-[#CAC7C7]">{description}</p>
+                    <p className="opacity-80">{description}</p>
                 </div>
             </div>
         </div>

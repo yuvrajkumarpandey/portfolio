@@ -1,3 +1,4 @@
+import React from 'react';
 const ProjectCard = ({
     title,
     status = "Running",
@@ -106,4 +107,4 @@ const ProjectCard = ({
     );
 };
 
-export default ProjectCard;
+export default React.memo(ProjectCard);

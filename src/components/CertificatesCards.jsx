@@ -1,3 +1,4 @@
+import React from 'react';
 const CertificatesCards = ({
     title,
     provider,
@@ -26,4 +27,4 @@ const CertificatesCards = ({
     );
 };
 
-export default CertificatesCards;
+export default React.memo(CertificatesCards);

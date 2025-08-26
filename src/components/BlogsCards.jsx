@@ -1,3 +1,4 @@
+import React from 'react';
 const BlogsCards = ({
     title,
     link
@@ -10,4 +11,4 @@ const BlogsCards = ({
     );
 };
 
-export default BlogsCards;
+export default React.memo(BlogsCards);

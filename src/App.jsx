@@ -1,6 +1,8 @@
 import './App.css'
 import Blogs from './components/Blogs'
 import Certification from './components/Certification'
+import Connect from './components/Connect'
+import Footer from './components/Footer'
 import Profile from './components/Profile'
 import Projects from './components/Projects'
 import Topbar from './components/Topbar'
@@ -19,6 +21,10 @@ function App() {
         <Certification />
 
         <Blogs />
+
+        <Connect />
+
+        <Footer />
 
       </div>
     </div>

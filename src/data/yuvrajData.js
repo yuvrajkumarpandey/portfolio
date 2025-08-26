@@ -1,14 +1,35 @@
-export const socialMediaLinks = {
-    "X": "https://x.com/yuvrajkpandey",
-
-    "Github": "https://github.com/yuvrajkumarpandey",
-
-    "Leet Code": "https://leetcode.com/u/yuvraj-kumar-pandey/",
-
-    "LinkedIn": "https://www.linkedin.com/in/yuvrajkumarpandey/",
-
-    "Peer List": "https://peerlist.io/yuvrajkpandey"
-}
+export const contactMe = [
+    {
+        "title": "X",
+        "icon": "/icons/x.svg",
+        "link": "https://x.com/yuvrajkpandey"
+    },
+    {
+        "title": "GitHub",
+        "icon": "/icons/github-link.svg",
+        "link": "https://github.com/yuvrajkumarpandey"
+    },
+    {
+        "title": "Leet Code",
+        "icon": "/icons/leetcode.svg",
+        "link": "https://leetcode.com/u/yuvraj-kumar-pandey/"
+    },
+    {
+        "title": "Linked In",
+        "icon": "/icons/linkedin.svg",
+        "link": "https://www.linkedin.com/in/yuvrajkumarpandey/"
+    },
+    {
+        "title": "Peer List",
+        "icon": "/icons/peerlist.svg",
+        "link": "https://peerlist.io/yuvrajkpandey"
+    },
+    {
+        "title": "Email",
+        "icon": "/icons/email.svg",
+        "link": "mailto:yuvraj.kumar.pandey1@gmail.com"
+    }
+]
 
 export const profileSection = {
     "profileImg": {
@@ -25,16 +46,27 @@ export const profileSection = {
 
 export const skills = {
     "ReactJS": "/icons/react.svg",
+
     "NodeJS": "/icons/node.svg",
+
     "Python": "/icons/python.svg",
+
     "Java": "/icons/java.svg",
+
     "JavaScript": "/icons/js.svg",
+
     "HTML": "/icons/html.svg",
+
     "CSS": "/icons/css.svg",
+
     "TailwindCSS": "/icons/tailwindcss.svg",
+
     "Git": "/icons/git.svg",
+
     "SQL": "/icons/sql.svg",
+
     "MongoDB": "/icons/mongodb.svg",
+
     "Figma": "/icons/figma.svg"
 }
 

@@ -5,20 +5,23 @@ import Skillschip from './Skillschip';
 function Profile() {
     return (
         <div className="px-5 pt-5 pb-10 mt-5 flex flex-col border-b border-[#1D1F29]">
-            <div>
+            <div className='flex justify-center items-center gap-1.5'>
+                <img src='/left-olive.svg' className='h-auto' loading='lazy' />
                 <img
-                    className={`${profileSection['profileImg']['height']} rounded-full border-4 border-[#1D1F29] mx-auto`}
+                    className={`${profileSection['profileImg']['height']} rounded-full`}
 
                     loading='lazy'
 
                     src={profileSection['profileImg']['profileImgURL']}
                 />
+                <img src='/right-olive.svg' className='h-auto' loading='lazy' />
             </div>
-            <div className='mt-3'>
-                <p className='text-lg text-[#CAC7C7] text-center font-[600]'>
+            <div className='mt-3 flex justify-center items-center'>
+                <p className='text-lg text-[#CAC7C7] flex flex-row gap-1 font-[600] justify-center items-center'>
                     {
                         profileSection['name']
                     }
+                    <img src='/verified.svg' className='h-auto hover:cursor-pointer z-[-20]' loading='lazy' />
                 </p>
             </div>
             <div>

@@ -7,15 +7,17 @@ function Connect() {
                 <h3 className="text-lg font-medium text-[#CAC7C7]">Contact Me</h3>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 mt-3">
-                {contactMe.map((connect, index) => (
-                    <Tooltip text={connect.title}>
-                        <a target='_blank' key={index} href={connect.link}>
-                            <div className="border border-[#1D1F29] p-2 rounded-md hover:bg-zinc-900/75">
-                                <img src={connect.icon} />
-                            </div>
-                        </a>
-                    </Tooltip>
-                ))}
+                {
+                    contactMe.map((connect) => (
+                        <Tooltip key={connect.title} text={connect.title}>
+                            <a target='_blank' href={connect.link}>
+                                <div className="border border-[#1D1F29] p-2 rounded-md hover:bg-zinc-900/75">
+                                    <img src={connect.icon} />
+                                </div>
+                            </a>
+                        </Tooltip>
+                    ))
+                }
             </div>
         </div >
     )

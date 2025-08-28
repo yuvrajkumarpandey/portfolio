@@ -48,8 +48,8 @@ function Topbar() {
                         ${animate ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
                     >
                         {
-                            contactMe.map((connect, index) => (
-                                <div key={index} className='text-left py-1'>
+                            contactMe.map((connect) => (
+                                <div key={connect.title} className='text-left py-1'>
                                     <a
                                         target='_blank'
                                         className='block px-4 py-2 hover:bg-[#1b1d22]'

@@ -38,9 +38,11 @@ function Certification() {
                 )}
             </div>
             <div className="flex flex-col gap-4 mt-3">
-                {certificate.slice(0, certificateNum).map((cartificate, index) => (
-                    <CertificatesCards key={index} {...cartificate} />
-                ))}
+                {
+                    certificate.slice(0, certificateNum).map((cartificate) => (
+                        <CertificatesCards key={cartificate.title} {...cartificate} />
+                    ))
+                }
             </div>
         </div>
     );

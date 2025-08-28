@@ -34,7 +34,7 @@ export const contactMe = [
 export const profileSection = {
     "profileImg": {
         "profileImgURL": "/profile.png",
-        "height": "h-30"
+        "height": "h-25"
     },
 
     "name": "Yuvraj Kumar Pandey",

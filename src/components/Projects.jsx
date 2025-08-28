@@ -39,8 +39,8 @@ function Projects() {
             </div>
             <div className="flex flex-col gap-4 mt-3">
                 {
-                    projects.slice(0, projectNum).map((project, index) => (
-                        <ProjectCard key={index} {...project} />
+                    projects.slice(0, projectNum).map((project) => (
+                        <ProjectCard key={project.title} {...project} />
                     ))
                 }
             </div>

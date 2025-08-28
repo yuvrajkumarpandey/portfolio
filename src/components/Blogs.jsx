@@ -38,9 +38,11 @@ function Blogs() {
                 )}
             </div>
             <div className="flex flex-col gap-4 mt-3">
-                {blogs.slice(0, blogNum).map((blog, index) => (
-                    <BlogsCards key={index} {...blog} />
-                ))}
+                {
+                    blogs.slice(0, blogNum).map((blog) => (
+                        <BlogsCards key={blog.title} {...blog} />
+                    ))
+                }
             </div>
         </div>
     );

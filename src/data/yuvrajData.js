@@ -14,11 +14,11 @@ export const contactMe = [
         "icon": "/icons/leetcode.svg",
         "link": "https://leetcode.com/u/yuvraj-kumar-pandey/"
     },
-    {
-        "title": "Linked In",
-        "icon": "/icons/linkedin.svg",
-        "link": "https://www.linkedin.com/in/yuvrajkumarpandey/"
-    },
+    // {
+    //     "title": "Linked In",
+    //     "icon": "/icons/linkedin.svg",
+    //     "link": "https://www.linkedin.com/in/yuvrajkumarpandey/"
+    // },
     {
         "title": "Peer List",
         "icon": "/icons/peerlist.svg",

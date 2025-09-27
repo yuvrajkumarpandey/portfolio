@@ -72,6 +72,15 @@ export const skills = {
 
 export const projects = [
     {
+        title: "Personal Portfolio Website",
+        status: "Running",
+        statusColor: "text-green-400 bg-green-400/10",
+        description: "A personal portfolio website built with React.js, Node.js, Express, and MongoDB. Designed with a modular structure, it allows easy customization by simply updating the data.js file, making content management seamless and efficient.",
+        image: "/projectsImg/project-three.jpg",
+        liveLink: "https://yuvraj.online/",
+        githubLink: "https://github.com/yuvrajkumarpandey/portfolio"
+    },
+    {
         title: "Green Energy UI Website",
         status: "Running",
         statusColor: "text-green-400 bg-green-400/10",

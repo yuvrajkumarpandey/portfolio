@@ -1,29 +1,19 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import ProjectCard from "./ProjectsCards";
 import { projects } from "../data/yuvrajData";
 
 function Projects() {
-    let [projectNum, setProjectNum] = useState(2)
-    let [btntxt, setBtntxt] = useState("Show More")
-    let maxShow = projects.length > 5 ? 5 : projects.length
+    const [projectNum, setProjectNum] = useState(2);
+    const [btntxt, setBtntxt] = useState("Show More");
+
+    const maxShow = projects.length > 5 ? 5 : projects.length;
+
     function show() {
-        setProjectNum((prev) => {
-            if (prev == 2) {
-                return maxShow
-            }
-            else {
-                return 2
-            }
-        })
-        setBtntxt((prvtxt) => {
-            if (prvtxt === "Show More") {
-                return "Show Less"
-            }
-            else {
-                return "Show More"
-            }
-        })
+        setProjectNum((prev) => (prev === 2 ? maxShow : 2));
+        setBtntxt((prev) => (prev === "Show More" ? "Show Less" : "Show More"));
     }
+
     return (
         <div className="px-5 pt-5 pb-5 flex flex-col border-b border-[#1D1F29]">
             <div className="flex justify-between">
@@ -37,15 +27,28 @@ function Projects() {
                     </button>
                 )}
             </div>
+
             <div className="flex flex-col gap-4 mt-3">
-                {
-                    projects.slice(0, projectNum).map((project) => (
-                        <ProjectCard key={project.title} {...project} />
-                    ))
-                }
+                <AnimatePresence>
+                    {projects.slice(0, projectNum).map((project, index) => (
+                        <motion.div
+                            key={project.title}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{
+                                duration: 0.3,
+                                delay: index * 0.1, // stagger effect
+                            }}
+                            layout
+                        >
+                            <ProjectCard {...project} />
+                        </motion.div>
+                    ))}
+                </AnimatePresence>
             </div>
         </div>
-    )
+    );
 }
 
 export default Projects;

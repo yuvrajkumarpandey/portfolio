@@ -1,27 +1,17 @@
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import CertificatesCards from "./CertificatesCards";
 import { certificate } from "../data/yuvrajData";
-import { useState } from "react";
 
 function Certification() {
-    let [certificateNum, setCertificateNum] = useState(3);
-    let [btntxt, setBtntxt] = useState("Show More");
-    let maxShow = certificate.length > 5 ? 5 : certificate.length;
+    const [certificateNum, setCertificateNum] = useState(3);
+    const [btntxt, setBtntxt] = useState("Show More");
+
+    const maxShow = certificate.length > 5 ? 5 : certificate.length;
 
     function show() {
-        setCertificateNum((prev) => {
-            if (prev === 3) {
-                return maxShow;
-            } else {
-                return 3;
-            }
-        });
-        setBtntxt((prvtxt) => {
-            if (prvtxt === "Show More") {
-                return "Show Less";
-            } else {
-                return "Show More";
-            }
-        });
+        setCertificateNum((prev) => (prev === 3 ? maxShow : 3));
+        setBtntxt((prev) => (prev === "Show More" ? "Show Less" : "Show More"));
     }
 
     return (
@@ -37,12 +27,25 @@ function Certification() {
                     </button>
                 )}
             </div>
+
             <div className="flex flex-col gap-4 mt-3">
-                {
-                    certificate.slice(0, certificateNum).map((cartificate) => (
-                        <CertificatesCards key={cartificate.title} {...cartificate} />
-                    ))
-                }
+                <AnimatePresence>
+                    {certificate.slice(0, certificateNum).map((item, index) => (
+                        <motion.div
+                            key={item.title}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{
+                                duration: 0.3,
+                                delay: index * 0.1, // stagger effect
+                            }}
+                            layout
+                        >
+                            <CertificatesCards {...item} />
+                        </motion.div>
+                    ))}
+                </AnimatePresence>
             </div>
         </div>
     );

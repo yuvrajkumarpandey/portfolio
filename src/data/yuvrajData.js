@@ -2,7 +2,7 @@ export const contactMe = [
     {
         "title": "X",
         "icon": "/icons/x.svg",
-        "link": "https://x.com/yuvrajkpandey"
+        "link": "https://x.com/yuvii_404"
     },
     {
         "title": "GitHub",

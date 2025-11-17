@@ -33,7 +33,7 @@ export const contactMe = [
 
 export const profileSection = {
     "profileImg": {
-        "profileImgURL": "/profile.png",
+        "profileImgURL": "/profile_big.jpg",
         "height": "h-25"
     },
 
